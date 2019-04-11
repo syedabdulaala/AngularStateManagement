@@ -1,0 +1,15 @@
+<div class="main-content-wrapper">
+	<header></header>
+	<div cdkDropList #stepList="cdkDropList" (cdkDropListDropped)="drop($event)" [cdkDropListData]="steps" class='steps-container'>
+		<div *ngFor="let step of steps | async" class="item" cdkDrag>
+			<step [step]="step"></step>
+		</div>
+		<div class='add-step' (click)="addNewStep()">
+			<p>Add Step</p>
+		</div>
+	</div>
+	<footer>
+	</footer>
+	<button [disabled]="(canUndo | async) === 0" (click)="undo()">Undo</button>
+  <button [disabled]="(canRedo | async) === 0" (click)="redo()">Redo</button>
+</div>

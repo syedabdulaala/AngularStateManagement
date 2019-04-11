@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+  <ul>
+    <li draggable="true" (dragstart)="onDragStart($event, element.id)" class="list-group-item"  *ngFor="let element of elements" >{{ element.name }}</li>
+  </ul>
+  </div>
+</div>

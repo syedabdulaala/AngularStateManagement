@@ -1,0 +1,35 @@
+
+.editorOptions
+{
+  text-align: right;
+  display:block;
+}
+
+.active {
+  background-color : darkgray;
+}
+
+.input {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    font: -moz-field;
+    font: -webkit-small-control;
+    min-height: 50px;
+    padding: 10px;
+    overflow: auto;
+}
+
+button {
+  background-color: lightgray;
+}
+
+.dummy-component {
+  background: grey;
+  max-width: 100px;
+  max-height: 50px;
+  color: white;
+  font-weight: bolder;
+}

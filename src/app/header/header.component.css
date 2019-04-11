@@ -1,0 +1,12 @@
+.header-widget {
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.header-info {
+  float: right;
+}

@@ -1,0 +1,10 @@
+@import url('https://unpkg.com/bootstrap/dist/css/bootstrap.min.css');
+p {
+  font-family: Lato;
+}
+
+.global-wrapper {
+  padding: 15px;
+}
+
+

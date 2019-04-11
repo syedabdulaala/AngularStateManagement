@@ -1,0 +1,15 @@
+<div class="editorOptions">
+ <button id="btnBold" class="fa fa-bold" (click)="executeCommand('bold')"></button>
+ <button id="btnUnderline" class="fa fa-underline" (click)="executeCommand('underline')"></button>
+ <button id="btnItalic" class="fa fa-italic" (click)="executeCommand('italic')"></button> 
+ <button class="fa fa-list-ul" (click)="executeCommand('insertUnorderedList')"></button>
+ <button class="fa fa-list-ol" (click)="executeCommand('insertOrderedList')"></button>
+ <button class="">Aa</button>
+ <button class="fa fa-outdent" (click)="executeCommand('outdent')"></button> 
+ <button class="fa fa-indent" (click)="executeCommand('indent')"></button>   
+</div>
+ <div class="input" contenteditable (keydown)="keydown()"
+    (drop)="onDrop($event)"
+    (dragover)="onDragOver($event)"
+ > {{inputString}}
+</div>

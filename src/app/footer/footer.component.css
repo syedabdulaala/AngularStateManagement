@@ -1,0 +1,12 @@
+.footer-widget {
+  text-align: center;
+  border: 1px;
+  border-style:  dashed;
+  padding-top: 10px;
+  margin-top: 25px;
+  background: #EEEEEE;
+}
+
+.footer-info {
+  float: right;
+}

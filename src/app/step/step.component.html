@@ -1,0 +1,19 @@
+<div class='row'>
+  <div class='col-sm-1'>
+      <input class="step-number"   value="{{ step.name }}"  />
+  </div>
+  <div class='col-sm-9'>
+    <div class="step-text">
+      <app-text-editor [inputString]=str >
+      </app-text-editor>
+    </div>
+  </div>
+  <div class='col-sm-2'
+    (drop)="onDrop($event)"
+    (dragover)="onDragOver($event)"
+  >
+    <div class="step-body" >
+      <span class='plus-icon'> {{ inputItem.name || '+'  }}  </span>
+    </div>
+  </div>
+</div>
